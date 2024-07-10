@@ -103,7 +103,7 @@ header {
       rgba(45, 92, 132, 0.5),
       rgba(45, 92, 132, 0.5)
     ),
-    url("img/santorini.jpg");
+    url("santorini.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,7 +188,7 @@ header .header-container{
       rgba(35, 71, 103, 0.5),
       rgba(35, 71, 103, 0.5)
     ),
-    url("img/ogbu cave.jpg");
+    url("ogbu cave.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

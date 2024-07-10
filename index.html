@@ -7,11 +7,12 @@
     
     
     <!-- Link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
-      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
     <!-- Link-->
     
     
@@ -21,20 +22,21 @@
     
     
     <!----NAVBAR --->
-  </body>
     <nav>
       <div class="nav-logo"><a href="#"><img src="img/logo.png"></a></div>
+      
       <ul class="nav-links">
-        <a href="#home"><li class="link">Home</li></a>
+        <a href="#home" class="nav-link active-link"><li class="link">Home</li></a>
         <a href="#destination"> <li class="link">Tours</li></a>
-        <a href="#"><li class="link">Offers</li></a>
-        <a href="#"><li class="link">Services</li></a>
-        <a href="#"><li class="link">Contact</li></a>
+        <a href="#offers"><li class="link">Offers</li></a>
+        <a href="#contact"><li class="link">Contact</li></a>
       </ul>
         <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            <class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
-        </nav>
+        </nav> 
+        
+        
     <!--NAVBAR-->
     
     
@@ -110,7 +112,7 @@
       </div>
     </section>
 
-    <section class="banner-container">
+    <section class="banner-container" id="offers">
       <div class="section-container">
         <div class="banner-content">
           <h2>Discount 10-30% Off</h2>
@@ -134,7 +136,7 @@
         </p>
         <div class="display-grid">
           <div class="display-card grid-1">
-            <img src="assets/grid-1.jpg" alt="grid" />
+            <img src="img/grid-1.jpg" alt="grid" />
           </div>
           <div class="display-card">
             <i class="ri-earth-line"></i>
@@ -142,11 +144,10 @@
             <p>Fuel your passion for adventure and discover new horizons</p>
           </div>
           <div class="display-card">
-            <img src="img/ogbu ca
-            e.jpg" alt="grid" />
+            <img src="img/grid-2.jpg" alt="grid" />
           </div>
           <div class="display-card">
-            <img src="assets/grid-3.jpg" alt="grid" />
+            <img src="img/grid-3.jpg" alt="grid" />
           </div>
           <div class="display-card">
             <i class="ri-road-map-line"></i>
@@ -156,6 +157,34 @@
         </div>
       </div>
     </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Us<i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: Nomadtrails@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +234 905 235 2154</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message" required=""></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
 
     <footer>
       <div class="section-container">

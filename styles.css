@@ -63,7 +63,7 @@ nav {
 }
 
 .nav-logo img {
-  width: 100px;
+  width: 150px;
 }
 
 .nav-links {
@@ -77,6 +77,7 @@ nav {
 .nav-link {
   text-decoration: none;
   list-style: none;
+
 }
 
 .link {
@@ -101,9 +102,9 @@ header {
   height: 80vh;
   width: auto;
   background-image: linear-gradient(rgba(45, 92, 132, 0.5),
-      rgba(45, 92, 132, 0.5)
+    rgba(45, 92, 132, 0.5)
     ),
-    url("santorini.jpg");
+  url("santorini.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -388,7 +389,10 @@ footer h4 {
   justify-content: center;
   gap: 1rem;
 }
-
+.icon-link{
+  text-decoration: none;
+  color: white;
+}
 .social__icons i {
   padding: 5px;
   font-size: 1.2rem;

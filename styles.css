@@ -51,33 +51,32 @@ body {
 
 nav {
   position: fixed;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 90px;
-    line-height: 90px;
-    background: white;
-    padding-inline: 9vw;
-    transition: .3s;
-    z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  background: white;
+  padding: 0 9vw;
+  z-index: 100;
+  transition: 0.3s;
 }
 
-.nav-logo {
+.nav-logo img {
   width: 100px;
-  margin: 10p
- 
 }
 
 .nav-links {
-  display: none;
+  display: flex;
   align-items: center;
-  text-decoration: none;
-   color: black;
-    padding: 5px;
-   margin: 20px;
   gap: 2rem;
-  
- 
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  list-style: none;
 }
 
 .link {
@@ -85,22 +84,23 @@ nav {
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.4s;
-  right: 20%;
   padding: 12px;
-  list-style:none;
   text-decoration: none;
+  list-style: none;
 }
 
 .link:hover {
-  
+  color: var(--primary-color-dark);
   transition: 0.6s;
+}
 
+.nav-menu-btn {
+  display: none; /* Assuming the menu button is for mobile */
 }
 header {
   height: 80vh;
   width: auto;
-  background-image: linear-gradient(
-      rgba(45, 92, 132, 0.5),
+  background-image: linear-gradient(rgba(45, 92, 132, 0.5),
       rgba(45, 92, 132, 0.5)
     ),
     url("santorini.jpg");
@@ -486,4 +486,31 @@ footer p {
     font-size: 1rem;
   }
 }
+/* Navbar styles */
+/* Responsive styles */
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 90px;
+    left: 0;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
 
+  .nav-menu-btn {
+    display: block;
+  }
+}
+
+@media (min-width: 640px) {
+  .nav-links {
+    display: flex;
+  }
+}
+/* Other styles */

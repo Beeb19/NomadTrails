@@ -1,45 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    
-    <!-- Link -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js"></script>
-    <!-- Link-->
-    
-    
-    <title>Nomad Trails</title>
-  </head>
-  <body>
-    
-    
-    <!----NAVBAR --->
-    <nav>
-      <div class="nav-logo"><a href="#"><img src="logo.png"></a></div>
-      
-      <ul class="nav-links">
-        <a href="#home" class="nav-link active-link"><li class="link">Home</li></a>
-        <a href="#destination"> <li class="link">Tours</li></a>
-        <a href="#offers"><li class="link">Offers</li></a>
-        <a href="#contact"><li class="link">Contact</li></a>
-      </ul>
-        <div class="nav-menu-btn">
-            <class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
-        </nav> 
-        
-        
-    <!--NAVBAR-->
-    
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Nomad Trails</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo">
+      <a href="#"><img src="logo.png" alt="Logo"></a>
+    </div>
+    <ul class="nav-links">
+      <a href="#home" class="nav-link active-link"><li class="link">Home</li></a>
+      <a href="#destination"><li class="link">Tours</li></a>
+      <a href="#offers"><li class="link">Offers</li></a>
+      <a href="#contact"><li class="link">Contact</li></a>
+    </ul>
+    <div class="nav-menu-btn">
+      <i class="uil uil-bars" onclick="toggleMenu()"></i>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- Remaining content -->
     <header>
       <div class="header-container" id="home">
         <div class="header-content">
@@ -50,7 +38,7 @@
             beaches to cultural wonders, we've got you covered with our
             comprehensive travel guides and insider tips.
           </p>
-          <button>Book With Us</button>
+        <a href="https://www.tripadvisor.com/Hotel_Review-g480225-d1201152-Reviews-Obudu_Mountain_Resort-Obudu_Cross_River_State.html"><button>Book With Us</button></a>
         </div>
       </div>
     </header>
@@ -70,42 +58,42 @@
             </div>
             <div class="country-name">
               <i class="ri-map-pin-2-fill"></i>
-              <span>Idanre Hills, Ondo.</span>
+              <span>Ondo Nigeira</span>
             </div>
           </div>
           <div class="country-card">
             <img src="abuja.jpg" alt="country" />
             <div class="country-name">
               <i class="ri-map-pin-2-fill"></i>
-              <span>Abuja, Nigeria.</span>
+              <span>Abuja, Nigeria</span>
             </div>
           </div>
           <div class="country-card">
             <img src="obudu2.jpg" alt="country" />
             <div class="country-name">
               <i class="ri-map-pin-2-fill"></i>
-              <span>Obudu Reserve, Calabar. </span>
+              <span>Obudu, Calabar</span>
             </div>
           </div>
           <div class="country-card">
             <img src="Lagos.jpeg" alt="country" />
             <div class="country-name">
               <i class="ri-map-pin-2-fill"></i>
-              <span>Lagos, Nigeria. </span>
+              <span>Lagos,Nigeria</span>
             </div>
           </div>
           <div class="country-card">
             <img src="olumo.jpg" alt="country" />
             <div class="country-name">
               <i class="ri-map-pin-2-fill"></i>
-              <span>Olumo Rock, Abeokuta. </span>
+              <span>Olumo Rock, Abeokuta</span>
             </div>
           </div>
           <div class="country-card">
             <img src="Calabar.jpg" alt="country" />
             <div class="country-name">
               <i class="ri-map-pin-2-fill"></i>
-              <span>Calabar, Nigeria. </span>
+              <span>Calabar, Nigeria</span>
             </div>
           </div>
         </div>
@@ -115,7 +103,7 @@
     <section class="banner-container" id="offers">
       <div class="section-container">
         <div class="banner-content">
-          <h2>Get 10-30% Discount Off Our Packages</h2>
+          <h2>Discount 10-30% Off</h2>
           <p>
             Travel the world on a budget with our unbeatable discounted travel
             deals. Whether you're looking for a last-minute escape or planning
@@ -201,5 +189,12 @@
         </p>
       </div>
     </footer>
-  </body>
+  
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
 </html>

@@ -230,7 +230,7 @@ header .header-container{
 }
 
 .display-container :is(.section-title, .section-subtitle) {
-  color: var(--text-dark);
+  color: var(--primary-color);
 }
 
 .display-grid {
